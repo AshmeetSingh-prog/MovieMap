@@ -1,0 +1,83 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+/* Error Message Container */
+.error-container {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px; /* Width limit for larger screens */
+    width: 90%; /* Responsive width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Icon */
+.error-icon {
+    font-size: 48px; /* Size of the error icon */
+}
+
+/* Error Message */
+.error-message {
+    margin: 15px 0;
+}
+
+.error-message h2 {
+    font-size: 24px; /* Size of the error title */
+    margin-bottom: 10px;
+}
+
+.error-message p {
+    font-size: 16px; /* Size of the error description */
+}
+
+/* Button Style */
+.error-button {
+    background-color: #721c24;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.error-button:hover {
+    background-color: #a71c24; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .error-message h2 {
+        font-size: 20px; /* Adjust title size for small screens */
+    }
+
+    .error-message p {
+        font-size: 14px; /* Adjust description size for small screens */
+    }
+
+    .error-button {
+        font-size: 14px; /* Adjust button size for small screens */
+        padding: 8px 16px; /* Adjust button padding for small screens */
+    }
+}

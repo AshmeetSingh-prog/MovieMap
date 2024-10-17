@@ -1,0 +1,243 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.none{
+    display: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-bottom: 3px solid #3498db;
+    width: 100%;
+}
+
+#containerhead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#title {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Centering the lang div */
+#lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Margin added below lang div */
+}
+
+#div {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+#btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #2980b9;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+.text{
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.img-box{
+    width: 48%;
+    height: 750px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    background-size: cover;
+}
+
+.info-box{
+    width: 48%;
+    height: auto;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.availability-container {
+    padding: 10px 0;
+}
+
+.availability-container div {
+    padding: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #e8f6ff;
+    color: #2c3e50;
+    height: auto;
+}
+
+.rent-div, .buy-div, .flatrate-div {
+    height: 50px;
+    background-color: #ecf0f1;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.headMovieTrailer{
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+ /* Container for the iframe to make it responsive */
+ .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+}
+
+/* The iframe is positioned absolutely to fill the container */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+  
+.sticky-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+@media (max-width: 600px) {
+.sticky-footer {
+    font-size: 16px;
+    padding: 15px;
+    }
+}
+  
+/* Responsive styles */
+@media (max-width: 768px) {
+    #title {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .img-box{
+        height: 400px;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    #btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .img-box, .info-box {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    #containerhead {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 22px;
+    }
+
+    #title {
+        padding: 10px;
+    }
+
+    #btn {
+        padding: 12px;
+    }
+
+    .rent-div, .buy-div, .flatrate-div {
+        height: 40px;
+    }
+}

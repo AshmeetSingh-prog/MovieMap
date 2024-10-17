@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">MovieMap</div>
+    
+    <div class="container">
+        <div id="containerhead">
+            <span>Enter Movie Name Here:</span>
+            <input type="text" name="title" id="title" value="" placeholder="Enter Here">
+            <div id="lang">
+                <div id="div"></div>
+                <select name="Country" id="country"></select>
+            </div>
+            <input type="button" value="Submit" id="btn">
+        </div>
+        
+        <div class="flex-container" id="flex-container">
+            <div id="imgBox" class="img-box"></div> <!-- Placeholder for the image 
+            The class to div#imgBox and div#info  will be given in script.js that is img-Box and info-box -->
+            <div id="info" class="info-box"></div> <!-- Information box -->
+            <div id="ertext"></div>
+        </div>
+
+        <h1 id="headMovieTrailer" class="">Movie Trailer</h1><!-- Class will be added in trailer.js file class name will be same as id -->
+        <div id="trailer" class="video-container"></div>
+        
+        <div class="availability-container">
+            <div>For rent available at:</div>
+            <div id="rent" class="rent-div"></div>
+        </div>
+        
+        <div class="availability-container">
+            <div>For buy available at:</div>
+            <div id="buy" class="buy-div"></div>
+        </div>
+        
+        <div class="availability-container">
+            <div>For flatrate available at:</div>
+            <div id="flatrate" class="flatrate-div"></div>
+        </div>
+    </div>
+    <div class="sticky-footer">
+        Made with 🤍 by Ashmeet Singh
+    </div>
+</body>
+    <script type="module" src="script.js"></script>
+    <script src="script1.js"></script>
+    <script type="module" src="Countries.js"></script>
+    <script type="module" src="SelectCountry.js"></script>
+    <script type="module" src="trailer.js"></script>
+</html>
